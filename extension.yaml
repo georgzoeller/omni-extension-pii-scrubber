@@ -2,5 +2,6 @@ title: PII Scrubber
 version: 0.0.1
 description: Example Extension showing how to detect and remove Personally Identifiable Information (PII) on workflow activation. Based on the redact-pii node module
 author: Georg Zoeller
+origin: https://github.com/georgzoeller/omni-extension-pii-scrubber.git
 client:
   addToWorkbench: false
