@@ -69,7 +69,7 @@ const PIIScrubberComponentDef =
       }
     },
     functions: {
-      _exec: async (ctx, payload) =>
+      _exec: async (payload, ctx) =>
       {
 
         const redactor = new SyncRedactor(  {
