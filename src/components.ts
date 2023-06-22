@@ -49,13 +49,13 @@ const PIIScrubberComponentDef =
       },
       patch:
       {
-        "title": "Redact PII",
-        "description": "A component to redact personally identifiable information (PII) from text",
+        "title": "PII Redcation",
+        "category": "Compliance",
         "meta":
         {
           "source":
           {
-            "description": "A text field pii redactorBuilt using the solvvy/redact-pii library, implementing regex based PII reduction along with support for Google Cloud DLP",
+            "summary": "A PII redactor built using the solvvy/redact-pii library, implementing regex based PII reduction along with support for Google Cloud DLP",
             links:
             {
               "What is PII?": "https://www.cloudflare.com/learning/privacy/what-is-pii/",
@@ -80,8 +80,10 @@ const PIIScrubberComponentDef =
           }
         });
 
-
-        payload.text = redactor.redact(payload.text)
+        if (payload.text != null && typeof(payload.text) === 'string')
+        {
+          payload.text = redactor.redact(payload.text)
+        }
       }
     }
   }

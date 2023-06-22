@@ -26,7 +26,7 @@ const extensionHooks = {
 
       console.log('job_pre_start pii scrubber', payload)
 
-    if (payload.text && payload.text != null)
+    if (payload.text != null && typeof(payload.text) === 'string')
     {
       payload.text = redactor.redact(payload.text);
     }
