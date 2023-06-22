@@ -49,8 +49,9 @@ const PIIScrubberComponentDef =
       },
       patch:
       {
-        "title": "PII Redcation",
+        "title": "PII Redaction",
         "category": "Compliance",
+        "summary": "Redact Persional Information from text",
         "meta":
         {
           "source":
@@ -84,6 +85,7 @@ const PIIScrubberComponentDef =
         {
           payload.text = redactor.redact(payload.text)
         }
+        return payload
       }
     }
   }
