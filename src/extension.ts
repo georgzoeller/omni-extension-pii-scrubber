@@ -1,5 +1,7 @@
-
 import { SyncRedactor } from 'redact-pii'
+import CreateComponents from './components'
+
+
 const redactor = new SyncRedactor(  {
   builtInRedactors: {
     names: {
@@ -7,10 +9,14 @@ const redactor = new SyncRedactor(  {
     }
   }
 });
+
+
 const debug = (text)=>
 {
   console.log('=================>', text)
 }
+
+
 
 const extensionHooks = {
 
@@ -40,7 +46,7 @@ const extensionHooks = {
 
 }
 
-export default extensionHooks
+export default {hooks: extensionHooks, createComponents: CreateComponents}
 
 
 
