@@ -5,11 +5,8 @@ const PIIScrubberComponentDef =
   {
     schema:
     {
-      "namespace": "omni-extension-pii-scrubber",
       "tags": ['default'],
-
       "componentKey": "redactPII",
-      "apiKey": "redactPII",
       "operation": {
         "operationId": "redactPII",
         "schema": {

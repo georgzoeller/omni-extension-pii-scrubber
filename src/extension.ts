@@ -11,11 +11,6 @@ const redactor = new SyncRedactor(  {
 });
 
 
-const debug = (text)=>
-{
-  console.log('=================>', text)
-}
-
 
 
 const extensionHooks = {
