@@ -6,7 +6,45 @@ const redactor = new SyncRedactor(  {
   builtInRedactors: {
     names: {
       enabled: false
-    }
+    },
+    url:
+    {
+      enabled: false
+    },
+    digits:
+    {
+      enabled: false
+    },
+    emailAddress:
+    {
+      enabled: true,
+      replaceWith: "PII_REDACTED: Email"
+    },
+    streetAddress:
+    {
+      enabled: true,
+      replaceWith: "PII_REDACTED: Address"
+    },
+    creditCardNumber:
+    {
+      enabled: true,
+      replaceWith: "PII_REDACTED: Credit Card"
+    },
+    ipAddress:
+    {
+      enabled: true,
+      replaceWith: "PII_REDACTED: ZIP CODE"
+    },
+    usSocialSecurityNumber:
+    {
+      enabled: true,
+      replaceWith: "PII_REDACTED: SSN"
+    },
+    zipcode:
+    {
+      enabled: false,
+      replaceWith: "PII_REDACTED: ZIP CODE"
+  }
   }
 });
 
