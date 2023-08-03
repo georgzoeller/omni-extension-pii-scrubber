@@ -24,20 +24,20 @@ let component = OAIBaseComponent
 
 // Adding input
 const inputs = [
-  { name: 'text', type: 'string', description: 'A string', customSocket: 'text' },
-  { name: 'url', type: 'boolean', default: true },
-  { name: 'names', type: 'boolean', default: false },
-  { name: 'emailAddress', type: 'boolean', default: true },
-  { name: 'credentials', type: 'boolean', default: true },
-  { name: 'digits', type: 'boolean', default: false },
-  { name: 'creditCardNumber', type: 'boolean', default: true },
-  { name: 'streetAddress', type: 'boolean', default: true },
-  { name: 'zipcode', type: 'boolean', default: true },
-  { name: 'ipAddress', type: 'boolean', default: true },
-  { name: 'usSocialSecurityNumber', type: 'boolean', default: true },
+  { name: 'text', type: 'string', description: 'The Text to Scan', customSocket: 'text' },
+  { name: 'url', type: 'boolean', defaultValue: true },
+  { name: 'names', type: 'boolean', defaultValue: false },
+  { name: 'emailAddress', type: 'boolean', defaultValue: true },
+  { name: 'credentials', type: 'boolean', defaultValue: true },
+  { name: 'digits', type: 'boolean', defaultValue: false },
+  { name: 'creditCardNumber', type: 'boolean', defaultValue: true },
+  { name: 'streetAddress', type: 'boolean', defaultValue: true },
+  { name: 'zipcode', type: 'boolean', defaultValue: true },
+  { name: 'ipAddress', type: 'boolean', defaultValue: true },
+  { name: 'usSocialSecurityNumber', type: 'boolean', defaultValue: true },
 ];
 
-inputs.forEach(({ name, type, customSocket, description, default: defaultValue }) => {
+inputs.forEach(({ name, type, customSocket, description, defaultValue }) => {
   component.addInput(
     component.createInput(name, type, customSocket)
       .set('description', description || '')
