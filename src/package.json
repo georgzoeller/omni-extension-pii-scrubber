@@ -4,10 +4,10 @@
   "scripts": {
     "build": "esbuild --bundle ./extension.ts --outdir=../server  --format=esm --analyze --color=true --target=es2020 --platform=node --external:mercs_rete"
   },
-  "dependencies": {
-    "redact-pii": "^3.4.0"
-  },
   "devDependencies": {
     "esbuild": "^0.18.4"
+  },
+  "dependencies": {
+    "redact-pii": "https://github.com/georgzoeller/redact-pii.git#commit=f3909ecf1c52b1f006281d6188922b66be854958"
   }
 }
