@@ -54,7 +54,7 @@ const redactor = new SyncRedactor(  {
 const extensionHooks = {
 
   // intercept direct entry into a chat input component
-  'component:x-input': function(ctx, payload)
+  'component:x-input': function(extension, ctx, payload)
   {
 
       console.log('job_pre_start pii scrubber', payload)
@@ -66,7 +66,7 @@ const extensionHooks = {
   },
 
   // Intercept chat input
-  'job_pre_start': function(ctx, workflow, workflow_context, actions)
+  'job_pre_start': function(extension, ctx, workflow, workflow_context, actions)
   {
     console.log('job_pre_start pii scrubber', workflow_context.args)
 
