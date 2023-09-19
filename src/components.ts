@@ -1,5 +1,5 @@
 import { SyncRedactor } from 'redact-pii'
-import { OAIBaseComponent, WorkerContext, OmniComponentMacroTypes } from 'mercs_rete';
+import { OAIBaseComponent, WorkerContext, OmniComponentMacroTypes } from 'omni-sockets';
 
 const NS_ONMI = 'compliance';
 
