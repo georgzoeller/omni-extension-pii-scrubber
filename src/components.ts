@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2023 MERCENARIES.AI PTE. LTD.
+ * All rights reserved.
+ */
+
 import { SyncRedactor } from 'redact-pii'
 import { OAIBaseComponent, WorkerContext, OmniComponentMacroTypes } from 'omni-sockets';
 
